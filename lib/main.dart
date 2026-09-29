@@ -26,17 +26,14 @@ class MeuCrachaApp extends StatelessWidget {
               boxShadow: const [
                 BoxShadow(color: Colors.black26, blurRadius: 8),
               ],
-             
+
               // ==========================================================
               // DESAFIO 5 (3 PONTOS) - DECORAÇÃO E GRADIENTE
               // Configure o fundo com LinearGradient aplicando
               // Colors.indigo e Colors.blueAccent.
               // ==========================================================
-              gradient: const LinearGradient(
-                colors: [
-                  // TODO: Primeira cor do gradiente,
-                  // TODO: Segunda cor do gradiente,
-                ],
+              gradient: LinearGradient(
+                colors: [Colors.indigo, Colors.blueAccent],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               ),
@@ -44,7 +41,6 @@ class MeuCrachaApp extends StatelessWidget {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-               
                 // ==========================================================
                 // DESAFIO 1 (3 PONTOS) - FOTO DE PERFIL
                 // Adicione a imagem via NetworkImage no CircleAvatar.
@@ -53,9 +49,9 @@ class MeuCrachaApp extends StatelessWidget {
                   radius: 50,
                   // TODO: Adicionar propriedade backgroundImage com NetworkImage
                 ),
-               
+
                 const SizedBox(height: 15),
-               
+
                 const Text(
                   'Seu Nome Completo',
                   style: TextStyle(
@@ -64,7 +60,7 @@ class MeuCrachaApp extends StatelessWidget {
                     color: Colors.white,
                   ),
                 ),
-               
+
                 // ==========================================================
                 // DESAFIO 2 (3 PONTOS) - ESTILIZAÇÃO E BIOGRAFIA
                 // Adicione a propriedade para fonte em itálico (fontStyle).
@@ -76,9 +72,9 @@ class MeuCrachaApp extends StatelessWidget {
                     // TODO: Inserir fontStyle: FontStyle.italic
                   ),
                 ),
-               
+
                 const Divider(color: Colors.white38, height: 30),
-               
+
                 // ==========================================================
                 // DESAFIO 3 (3 PONTOS) - ALINHAMENTO DE SKILLS (ROW)
                 // Alinhe ao centro e crie os 3 Chips: 'Dart', 'Flutter', 'Git'.
@@ -93,9 +89,9 @@ class MeuCrachaApp extends StatelessWidget {
                     // TODO: Adicionar o Chip 'Git',
                   ],
                 ),
-               
+
                 const SizedBox(height: 15),
-               
+
                 // ==========================================================
                 // DESAFIO 4 (3 PONTOS) - COMPILAÇÃO E ESTRUTURA
                 // Garanta que o projeto prova_cracha_app compila sem erros no Debian. Tire um print e anexe a esta atividade.
