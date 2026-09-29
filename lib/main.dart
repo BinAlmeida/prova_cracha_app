@@ -81,18 +81,25 @@ class MeuCrachaApp extends StatelessWidget {
                 // DESAFIO 3 (3 PONTOS) - ALINHAMENTO DE SKILLS (ROW)
                 // Alinhe ao centro e crie os 3 Chips: 'Dart', 'Flutter', 'Git'.
                 // ==========================================================
-                const Row(
-                  // TODO: Adicionar mainAxisAlignment: MainAxisAlignment.center
-                  children: [
+                const Text(
+                  'Habilidades',
+                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                ),
+
+                const SizedBox(height: 10),
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: const [
+                    Chip(label: Text('Flutter')),
+                    SizedBox(width: 8),
                     Chip(label: Text('Dart')),
-                    SizedBox(width: 5),
-                    // TODO: Adicionar o Chip 'Flutter',
-                    SizedBox(width: 5),
-                    // TODO: Adicionar o Chip 'Git',
+                    SizedBox(width: 8),
+                    Chip(label: Text('Git')),
                   ],
                 ),
 
-                const SizedBox(height: 15),
+                const SizedBox(height: 20),
 
                 // ==========================================================
                 // DESAFIO 4 (3 PONTOS) - COMPILAÇÃO E ESTRUTURA
